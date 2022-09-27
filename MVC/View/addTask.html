@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <form method="post">
+        <div class="col-7">
+            <label for="username" class="form-label">User name</label>
+            <input name="user" class="form-control" id="username" value="">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="email" value="">
+            <label for="taskText" class="form-label">Task</label>
+            <textarea class="form-control" name="message" id="taskText" rows="5"></textarea>
+            <select class="form-select" name="status" aria-label="Task status">
+                <option value="active" selected>Active</option>
+                <option value="not_active">Not active</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <button type="submit">Add</button>
+        </div>
+        <input name="action" value="add" hidden>
+    </form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
