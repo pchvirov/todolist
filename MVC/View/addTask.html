@@ -10,12 +10,12 @@
     <form method="post">
         <div class="col-7">
             <label for="username" class="form-label">User name</label>
-            <input name="user" class="form-control" id="username" value="">
+            <input name="user" class="form-control" id="username" value="" required>
             <label for="email" class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" id="email" value="">
+            <input type="email" name="email" class="form-control" id="email" value="" required>
             <label for="taskText" class="form-label">Task</label>
-            <textarea class="form-control" name="message" id="taskText" rows="5"></textarea>
-            <select class="form-select" name="status" aria-label="Task status">
+            <textarea class="form-control" name="message" id="taskText" rows="5" required></textarea>
+            <select class="form-select" name="status" aria-label="Task status" required>
                 <option value="active" selected>Active</option>
                 <option value="not_active">Not active</option>
             </select>
