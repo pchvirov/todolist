@@ -33,7 +33,8 @@ class DbWorker
             $this->config->getHost(),
             $this->config->getUsername(),
             $this->config->getPassword(),
-            $this->config->getDbName()
+            $this->config->getDbName(),
+            $this->config->getPort()
         );
         if ($this->mysqli->connect_error) {
             echo 'error connect to db';
