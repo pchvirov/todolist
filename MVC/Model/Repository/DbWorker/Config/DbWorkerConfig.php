@@ -10,9 +10,10 @@ class DbWorkerConfig
 {
     private const CONFIG = [
         'host' => '127.0.0.1',
-        'username' => 'root',
-        'password' => 'test',
-        'dbname' => 'todolist'
+        'username' => 'admin',
+        'password' => 'admin',
+        'dbname' => 'todolist',
+        'port' => 3306
     ];
 
     /**
@@ -45,5 +46,13 @@ class DbWorkerConfig
     public function getDbName()
     {
         return self::CONFIG['dbname'];
+    }
+    
+    /**
+     * @return int
+     */
+    public function getPort()
+    {
+        return self::CONFIG['port'];
     }
 }
